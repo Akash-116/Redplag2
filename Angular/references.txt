@@ -1,0 +1,33 @@
+Auth:
+    https://www.positronx.io/full-angular-7-firebase-authentication-system/
+    https://stackoverflow.com/questions/60455433/property-auth-does-not-exist-on-type-angularfireauth
+    https://firebase.google.com/docs/auth/web/password-auth
+    https://stackoverflow.com/questions/38389341/firebase-create-user-with-email-password-display-name-and-photo-url
+    https://firebase.google.com/docs/auth/ios/manage-users
+Download:
+    https://www.roytuts.com/download-file-from-server-using-angular/
+
+upload:
+  https://www.youtube.com/watch?v=YkvqLNcJz3Y
+Django+Angular:
+  https://www.techiediaries.com/angular-10-django-3-upload-image-files/
+FilenameMissingError:
+  https://stackoverflow.com/questions/46806335/fileuploadparser-doesnt-get-the-file-name
+Zipfiles in python:
+  https://www.geeksforgeeks.org/working-zip-files-python/
+Virtual Environment Windows:
+  https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/
+Download and Upload:
+  https://stackoverflow.com/questions/36980166/download-file-with-angular-and-django
+  https://stackoverflow.com/questions/25449946/django-rest-framework-return-file
+  https://stackoverflow.com/questions/52154874/angular-6-downloading-file-from-rest-api
+
+FinalCode for Download angularside:
+  https://stackoverflow.com/questions/51682514/angular-how-to-download-a-file-from-httpclient
+Paths for Unzip:
+  Here paths are working weirdly.I thought base path is the path of folder in which th eview is there but what actually happened is that the path of "project directory" is taken as base
+
+parametric routes django:
+  https://stackoverflow.com/questions/150505/capturing-url-parameters-in-request-get
+  https://django.cowhite.com/blog/working-with-url-get-post-parameters-in-django/
+

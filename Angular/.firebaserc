@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "red-plag-project": {
+      "hosting": {
+        "RedPlagProject": [
+          "red-plag-project"
+        ]
+      }
+    }
+  }
+}

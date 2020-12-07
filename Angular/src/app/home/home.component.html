@@ -1,0 +1,24 @@
+<div class="body2">
+<span class="login_heading">Home:</span>
+<!-- <p>Hai {{username}}.Welcome to your page.Here You can upload the zip file of files and find the copying extent btw each pair of files</p> -->
+<!-- <input type="button" value="username" (click)='getusername()'> -->
+<a class="query_link" style="float: right;" routerLink="/changepassword">Change Password?</a>
+<br>
+<br>
+<br>
+<span>Upload a zip file of the text files:</span><br><br>
+
+<input  type="file" name="myzip" (change)="onSelect($event)">
+<br><br>
+<button  (click)="onSubmit()">Upload</button>
+
+<br><br><br>
+
+<span>Click Download after you have uploaded the files:</span><br><br>
+<button (click)="download()">Download</button>
+
+<br><br>
+<br><br>
+<a class="query_link" routerLink="/logout">Logout</a>
+<br>
+</div>

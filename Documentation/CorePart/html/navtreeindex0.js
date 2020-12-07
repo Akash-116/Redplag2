@@ -1,0 +1,20 @@
+var NAVTREEINDEX0 =
+{
+"dictbuilder_8py.html":[1,0,0],
+"dictbuilder_8py.html#a5c909be4aeb1b09191886d21bd0fe3bf":[1,0,0,1],
+"dictbuilder_8py.html#ab41c7b1bde5ef39e979308842bfe51b7":[1,0,0,2],
+"dictbuilder_8py.html#abef9e6ee5ab1855d55bf61cc157a1c6a":[1,0,0,0],
+"files.html":[1,0],
+"index.html":[],
+"namespacedictbuilder.html":[0,0,0],
+"namespacemembers.html":[0,1,0],
+"namespacemembers_func.html":[0,1,1],
+"namespaceredplag.html":[0,0,1],
+"namespaces.html":[0,0],
+"pages.html":[],
+"redplag_8py.html":[1,0,1],
+"redplag_8py.html#a254ee93ee5803902ea21bb091bcaa80d":[1,0,1,1],
+"redplag_8py.html#a8f2ef22b3ddc6fffa8baa66d02869aa6":[1,0,1,2],
+"redplag_8py.html#aab7671fef1c017bf94d85bc28209e896":[1,0,1,0],
+"redplag_8py.html#af17b876a090d566a6a3c1131c2f73dfe":[1,0,1,3]
+};

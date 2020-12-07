@@ -1,0 +1,24 @@
+<div class="body">
+<span class="login_heading">Login:</span>
+<br><hr>
+<br>
+<form [formGroup]='form'>
+    <table class="login_field">
+        <tr>
+            <th><label for="email">Email: </label></th>
+            <th><input type="email" id='email' formControlName="email"></th>
+        </tr>
+        <tr>
+            <th><label for="password">Password: </label></th>
+            <th><input type="password" id='password' formControlName="password"></th>
+        </tr>
+    </table>
+    <br>
+    <input class="login_button" type='submit' value='Login' (click)="login()">
+    
+</form>
+<br>
+<a class="query_link" routerLink='/forgot'>Forgot Password?    </a>
+<a class="query_link" routerLink='/register'>Don't have an Account?</a>
+<!-- //to add the forgot password thing -->
+</div>

@@ -1,0 +1,39 @@
+<div class="body">
+<span class="login_heading">Register:</span><br><br>
+<br><hr>
+<br>
+<form [formGroup]=form>
+    <table class="login_field">
+        <tr>
+            <th><label for="firstname">First Name:</label></th>
+            <th><input id="firstname" type="text" formControlName="firstname"></th>
+        </tr>
+        <tr>
+            <th><label for="lastname">Last name:</label></th>
+            <th><input id="lastname" type="text" formControlName="lastname"></th>
+        </tr>
+        <tr>
+            <th><label for="email">Email:</label></th>
+            <th><input id="email" type="text" formControlName="email"></th>
+        </tr>
+        <tr>
+            <th><label for="phone">Phone Number:</label></th>
+            <th><input type="tel" pattern="[0-9]{10}" id="phone"></th>
+        </tr>
+        <tr>
+            <th><label for="password1">Password:</label></th>
+            <th><input id="password1" type="password" formControlName="password1"></th>
+        </tr>
+        <tr>
+            <th><label for="password2">Retype password:</label></th>
+            <th><input id="password2" type='password' formControlName="password2"></th>
+        </tr>
+    </table>
+    <br>
+    <input class="login_button" type="submit" (click)=register() value="Register">
+</form>
+<br>
+<br>
+<br>
+<a class="query_link" routerLink="login">Already have an account?</a>
+</div>
