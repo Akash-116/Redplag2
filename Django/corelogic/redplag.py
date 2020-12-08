@@ -1,4 +1,4 @@
-import proj
+import dictbuilder
 import numpy as np
 import pandas as pd
 import matplotlib as mpl
@@ -104,7 +104,7 @@ def redPlag(inpath, outpath, cplusplus, stub, stubpath):
 
 	for x in range(num_file_path):
 		if(cplusplus == True):
-			maps.append(proj.getdict(file_path[x]))
+			maps.append(dictbuilder.getdict(file_path[x]))
 		else:
 			file = open(file_path[x], "r", errors='ignore')
 			text = file.read()
@@ -113,7 +113,7 @@ def redPlag(inpath, outpath, cplusplus, stub, stubpath):
 
 	if(stub == True):
 		if(cplusplus == True):
-			stub_map = proj.getdict(stubpath)
+			stub_map = dictbuilder.getdict(stubpath)
 		else:
 			file = open(stubpath, "r", errors='ignore')
 			text = file.read()
