@@ -6,7 +6,7 @@
 | **A**kash Reddy G. | 190050038 | Webpage styling (SCSS), integrating core-logic into backend, upload and download implementations (both frontend and backend). API-endpoint documentation. |
 | **C**handrasekhara S.S.H.H. | 190050031 | Setting up REST-API framework for django-backend, google firebase framework for angular-frontend, implemented login page(both frontend and backend), implemented **all** the components, guards and serivces in angular-frontend. |
 | **V**ishwanth K. | 190050131 | Visualisation for results obtained from processing the files, implemented the stub-code feature. |
-| **K**arthikeya B. | 190050026 | Implemented plagiarism core-logic, documented the core-logic using doxygen |
+| **K**arthikeya B. | 190050026 | Implemented the **complete** plagiarism core-logic to calculate similarity, documented the core-logic using doxygen |
 
   
 # Implementation details :
@@ -21,7 +21,8 @@
 * For the authentication part **Google Firebase** is used and we've successfully implemented:
   * Restricting access for non-authenticated users.
   * Sending email verifications to activate account and also in case of change-password/ forgot-password requests.
-  * Storing the JWtokens in the local storage of the browser.  
+  * Storing the JWtokens in the local storage of the browser. 
+  * **Minor Note**: we also have a parallel implementation using django-backend for user authorization, but it turned out to be devoid of features such as emailing users. So, finally Firebase was decided upon. ([Link](https://github.com/Akash-116/Redplag2) to the parallel django-backend-for-authorization implementation.) 
   
 * For **Upload** and **Download** functionality, we've used **REST-API framework** from django as backend. Also:
   * When a zip-file is uploaded, it's constituents are stored in the **unzipped** folder. Instead, if a stub-code file is uploaded, it is placed in the **stubcode** directory.
