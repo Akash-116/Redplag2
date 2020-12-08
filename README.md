@@ -66,5 +66,8 @@
   * Read about other strategies to detect plagiarism and try to improve our core logic.
 * **Part-2**
   * Add a new feature to create an organization and use organization code to login or signup.
-  * Add Forgot Password option in login page.
   * Make some changes in styling to make it more attractive.
+  
+# Contribution to the Project (Needs to be updated) - 
+* Karthikeya - 190050026 - dictBuilder.py (Core part specifically for C++), Part-1 documentation
+* Viswanth - 190050131 - redPlag.py (Part-1 output and Stub code) 
