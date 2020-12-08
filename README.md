@@ -9,7 +9,7 @@
 | **K**arthikeya B. | 190050026 | Implemented plagiarism core-logic, documented the core-logic using doxygen |
 
   
-# Implementation details (by no means exahustive) :
+# Implementation details :
 
 * We've used **Angular** for the frontend, implementing:
   * Components like login-component, register-component, home, logout, emailverification etc.
