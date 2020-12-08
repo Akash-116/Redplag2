@@ -1,6 +1,6 @@
-# RedPlagProject
+# Project RedPlag
 
-# What we have implemented so far
+# What we have implemented so far :
 
 * Signup and Login Pages
 * User Authentication and strictly no access for unauthorized user
@@ -18,11 +18,14 @@
 * We have used **Angular** for the frontend.
 * For the authentication part we used **Firebase** and were successful in
   * Restricting access for non-authenticated users.
-  * Sending Email verifications to activate account and link to change password.
-  * Storing all the user data in our firebase account.
-* For **Upload** and **Download** we have used **Django REST API** framework and **Python** as backend and
-  * When a zip file is uploaded, it is stored in the **media** folder. Now the zip file is unzipped and sent to the **unzipped** folder in the same directory.
-  * For now we are just giving out the same zip file uploaded when the download button is clicked, we will change this later when our part-1 implementation is also done.
+  * Sending Email verifications to activate account and also in case of change-password request.
+  * Storing the user data in our google-firebase account.
+  * The token details are stored in the local storage of the browser, rather than the frontend, maintaing privacy of the user.  
+* For **Upload** and **Download** functionality, we've used **Django REST-API** framework and **Python** as backend and
+  * When a zip-file is uploaded, it's constituents are stored in the **unzipped** folder. Instead, if a stub-code file is uploaded, it is placed in the **stubcode** directory.
+  * The processing of the files, begin as soon as the zip-file is uploaded (The user is given choice (on the website) as to how to process the files, whether text or cpp, whether with stub or without). The results of the Plagiarism checking, are then stored in the **rpoutput** directory.
+  * A visualisation image is sent to the front end, which displays it on the website, as soon as the user uploads the zip-file.
+  * A download button is enabled, which then downloads the appropriate file (either a .png or a .csv file) from the backend. 
 
 # Instructions for the User (How to use)
 
@@ -68,6 +71,9 @@
   * Add a new feature to create an organization and use organization code to login or signup.
   * Make some changes in styling to make it more attractive.
   
-# Contribution to the Project (Needs to be updated) - 
-* Karthikeya - 190050026 - dictBuilder.py (Core part specifically for C++), Part-1 documentation
-* Viswanth - 190050131 - redPlag.py (Part-1 output and Stub code) 
+# Meet the Team (Needs to be updated) :- 
+* Chandrasekhar - 190050031 - Setting up REST-API framework for Django Backend, Firebase framework for Angular Frontend, Implemented login page (both frontend and backend), Implemented all the Guards and Serivces in Angular Frontend.  
+* Karthikeya - 190050026 - Plagiarism core-logic implementation and documentation using doxygen.
+* Viswanth - 190050131 - Visualisation for results. Implemented the stub-code feature.
+* Akash Reddy - 190050038 - WebPage Styling, Integrating part-1 logic in backend, Upload and Download implementation for Frontend and Backend. API endpoints documentation.
+ 
