@@ -1,12 +1,12 @@
 # Project RedPlag
 
 # Meet the Team :
-| Name | Roll Number | Contribution | Kudos |
-| :----: | :-----------: | -------------| ------- |
-| **A**kash Reddy G. | 190050038 | Webpage styling (SCSS), integrating core-logic into backend, upload and download implementations (both frontend and backend). API-endpoint documentation. | Responsible for the webpage layout and upload-download features |
-| **C**handrasekhara S.S.H.H. | 190050031 | Setting up REST-API framework for django-backend, google firebase framework for angular-frontend, implemented login page(both frontend and backend), implemented **all** the components, guards and serivces in angular-frontend. | Responsible for implementing **most** of the website's framework (frontend and backend ) |
-| **V**ishwanth K. | 190050131 | Visualisation for results obtained from processing the files, implemented the stub-code feature. | Responsible for visualization of the results  |
-| **K**arthikeya B. | 190050026 | Implemented plagiarism core-logic, documented the core-logic using doxygen | Responsible for writing the **complete** plagurism-check logic |
+| Name | Roll Number | Contribution |
+| :----: | :-----------: | -------------|
+| **A**kash Reddy G. | 190050038 | Webpage styling (SCSS), integrating core-logic into backend, upload and download implementations (both frontend and backend). API-endpoint documentation. |
+| **C**handrasekhara S.S.H.H. | 190050031 | Setting up REST-API framework for django-backend, google firebase framework for angular-frontend, implemented login page(both frontend and backend), implemented **all** the components, guards and serivces in angular-frontend. |
+| **V**ishwanth K. | 190050131 | Visualisation for results obtained from processing the files, implemented the stub-code feature. |
+| **K**arthikeya B. | 190050026 | Implemented plagiarism core-logic, documented the core-logic using doxygen |
 
   
 # Implementation details (by no means exahustive) :
