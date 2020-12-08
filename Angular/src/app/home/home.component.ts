@@ -57,6 +57,8 @@ export class HomeComponent implements OnInit {
     (<HTMLInputElement>document.getElementById("sChooseBtn")).value = "";
     this.stubfile = null;
     document.getElementById("heatmap").style.display = "none";
+    document.getElementById("heatmap_msg").style.display = "block";
+
 
   }
 
@@ -143,9 +145,10 @@ export class HomeComponent implements OnInit {
       res => {
         console.log(res);
         this.disableZipButtons(false);
+        this.disableStubButtons(true);
         (<HTMLInputElement>document.getElementById("sChooseBtn")).value = "";
         this.stubfile = null;
-        alert("uploading Stub successful.");
+        alert("uploading Stub successful. Please upload the Zip File now");
       },
       err => {
         console.log(err);

@@ -16,6 +16,7 @@ export class UploadService {
     let x = document.getElementById("heatmap");
     // x.setAttribute('src', url);
     x.style.display = "none"
+    document.getElementById("heatmap_msg").style.display="block";
 
 
     return this.http.post<any>(`${this.DJANGO_SERVER}/upload/${user_code}`, formdata)

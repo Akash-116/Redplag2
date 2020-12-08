@@ -41,7 +41,8 @@ export class DownloadService {
     if (fileextension == "showImage") {
       let x = document.getElementById("heatmap");
       x.setAttribute('src', url);
-      x.style.display = "block"
+      x.style.display = "block";
+      document.getElementById("heatmap_msg").style.display = "none";
     }
     // let pwa=window.open(url);
     // if(!pwa || pwa.closed || typeof pwa.closed == 'undefined' ){

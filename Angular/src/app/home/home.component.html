@@ -58,14 +58,19 @@ So, User_Code is--------------------------------- {{user_code}} -->
     <button id="zUploadBtn" (click)="onSubmit()">Upload<br> Zip </button>
 
     <br><br><br>
-    <img id="heatmap" alt="Halwa nayala" style="display: none;">
+    <div style="border:4px solid rgb(78, 81, 228); width: 640px; height:480px; left:-40px; position: relative; "> 
+        <span id = "heatmap_msg" style="position: relative; left: 110px; top:220px">
+            Image will be displayed after uploading the zip file.
+        </span>
+        <img id="heatmap" alt="Halwa nayala" style="display: none;">
+    </div>
 
-    <!-- <br><br><br> -->
+    <br><br>
 
     <span style="text-decoration : underline;">Download after you have successfully uploaded the files :-
     </span><br><br>
-    <button id="dImageBtn" (click)="download('png')"> Download <br>Image</button>
-    <button id="dCsvBtn" (click)="download('csv')"> Download <br>Csv</button>
+    <button id="dImageBtn" (click)="download('png')" style="margin: 4px; margin-left: 10 px; " > Download <br>Image</button>
+    <button id="dCsvBtn" (click)="download('csv')" style="margin: 4px; margin-left: 10 px; " > Download <br>Csv</button>
     <!-- <button id="dDisplayBtn" (click)="spamFunc()"> Display <br> Image</button> -->
 
 
