@@ -5,20 +5,73 @@
     <a class="query_link" style="float: right;" routerLink="/changepassword">Change Password?</a>
     <br>
     <br>
-    <br>
-    <span>Upload a zip file of the text files:</span><br><br>
+    <form [formGroup]="choices" (change)="setUserCode()">
+        <label>File Type is</label>
+        <div>
+            <input type="radio" id="cpp" formControlName="fileType" value="cpp">
+            <label for="cpp">C++ files</label><br>
 
-    <input  type="file" name="myzip" (change)="onSelect($event)">
+            <input type="radio" id="text" formControlName="fileType" value="text">
+            <label for="text">Text files</label><br>
+
+        </div>
+        <br>
+        <label>Stub Code : </label>
+        <div>
+            <input type="radio" id="stub_no" formControlName="stubCode" value="no">
+            <label for="stub_no">I don't have a stub code.</label><br>
+
+            <input type="radio" id="stub_yes" formControlName="stubCode" value="yes">
+            <label for="stub_yes">I have a stub code.</label><br>
+
+            <!-- <select formControlName="stubcode">
+            <option value="no">I don't have a stub code</option>
+            <option value="yes">I've got a stub code</option>
+        </select> -->
+
+        </div>
+        <br>
+        <button id="resetBtn" (click)="resetFlow()">Reset</button>
+    </form>
+    <br>
+    <br>
+    <!-- 
+The value for fileType is ---------------------- {{choices.value.fileType}}.<br>
+The value for stubCode is --------------------- {{choices.value.stubCode}}<br>
+So, User_Code is--------------------------------- {{user_code}} -->
+
+    <hr>
+    <hr>
+    <br>
+    <span style="text-decoration : underline;">Upload stub code for the text files :- </span><br><br>
+
+    <input type="file" name="stubCode" (change)="onSelect2($event)" id="sChooseBtn">
     <br><br>
-    <button  (click)="onSubmit()">Upload</button>
+    <button (click)="onSubmit2()" id="sUploadBtn">Upload<br>Stub</button>
+
+    <br><br>
+    <hr>
+    <hr>
+    <span style="text-decoration : underline;">Upload a zip file of the text files :- </span><br><br>
+    <input id="zChooseBtn" type="file" name="myzip" (change)="onSelect($event)">
+    <br><br>
+    <button id="zUploadBtn" (click)="onSubmit()">Upload<br> Zip </button>
 
     <br><br><br>
+    <img id="heatmap" alt="Halwa nayala" style="display: none;">
 
-    <span>Click Download after you have uploaded the files:</span><br><br>
-    <button (click)="download()">Download</button>
+    <!-- <br><br><br> -->
+
+    <span style="text-decoration : underline;">Download after you have successfully uploaded the files :-
+    </span><br><br>
+    <button id="dImageBtn" (click)="download('png')"> Download <br>Image</button>
+    <button id="dCsvBtn" (click)="download('csv')"> Download <br>Csv</button>
+    <!-- <button id="dDisplayBtn" (click)="spamFunc()"> Display <br> Image</button> -->
+
+
 
     <br><br>
     <br><br>
     <a class="query_link" routerLink="/logout">Logout</a>
     <br>
-</div>
+    <!-- </div> -->

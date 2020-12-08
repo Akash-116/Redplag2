@@ -10,6 +10,14 @@ export class UploadService {
   constructor(private http: HttpClient) { }
 
   upload(formdata, user_code): any {
+    // const requestOptions = {
+    //   headers: new HttpHeaders(this.authserv.headerDict),
+    // };
+    let x = document.getElementById("heatmap");
+    // x.setAttribute('src', url);
+    x.style.display = "none"
+
+
     return this.http.post<any>(`${this.DJANGO_SERVER}/upload/${user_code}`, formdata)
   }
 }
