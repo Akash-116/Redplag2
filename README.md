@@ -1,5 +1,13 @@
 # Project RedPlag
 
+# Meet our Team
+| Name | Roll Number | Contribution |
+| :----: | :-----------: | -------------|
+| **A**kash Reddy | 190050038 | WebPage Styling, Integrating part-1 logic in backend, Upload and Download implementation for Frontend and Backend. API endpoints documentation |
+| **C**handrasekhar | 190050031 | Setting up REST-API framework for Django Backend, Firebase framework for Angular Frontend, Implemented login page (both frontend and backend), Implemented all the Guards and Serivces in Angular Frontend |
+| **V**ishwanth | 190050131 | Visualisation for results. Implemented the stub-code feature |
+| **K**arthikeya | 190050026 | Plagiarism core-logic implementation and documentation using doxygen |
+
 # What we have implemented so far :
 
 * Signup and Login Pages
@@ -26,6 +34,7 @@
   * The processing of the files, begin as soon as the zip-file is uploaded (The user is given choice (on the website) as to how to process the files, whether text or cpp, whether with stub or without). The results of the Plagiarism checking, are then stored in the **rpoutput** directory.
   * A visualisation image is sent to the front end, which displays it on the website, as soon as the user uploads the zip-file.
   * A download button is enabled, which then downloads the appropriate file (either a .png or a .csv file) from the backend. 
+* For Core part we have used **Bag of Words** strategy to get the signature vector for each file and used the **Normalized distance** as the metric to compute the similarity between two vectors. For more details look at the Documentation.
 
 # Instructions for the User (How to use)
 
@@ -69,11 +78,4 @@
   * Read about other strategies to detect plagiarism and try to improve our core logic.
 * **Part-2**
   * Add a new feature to create an organization and use organization code to login or signup.
-  * Make some changes in styling to make it more attractive.
-  
-# Meet the Team (Needs to be updated) :- 
-* Chandrasekhar - 190050031 - Setting up REST-API framework for Django Backend, Firebase framework for Angular Frontend, Implemented login page (both frontend and backend), Implemented all the Guards and Serivces in Angular Frontend.  
-* Karthikeya - 190050026 - Plagiarism core-logic implementation and documentation using doxygen.
-* Viswanth - 190050131 - Visualisation for results. Implemented the stub-code feature.
-* Akash Reddy - 190050038 - WebPage Styling, Integrating part-1 logic in backend, Upload and Download implementation for Frontend and Backend. API endpoints documentation.
- 
+  * Make some changes in styling to make it more attractive. 
