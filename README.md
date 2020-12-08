@@ -1,16 +1,19 @@
 # RedPlagProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.
-
 # What we have implemented so far
 
 * Signup and Login Pages
 * User Authentication and strictly no access for unauthorized user
 * User Home page
-* Change Password (in Home Page) and Forgot password (in Login Page) options
-* Upload and Download options
-
-# Implementation details
+* Change Password option in Home page and Forgot Password option in Login page
+* Gave user options to select which type of files he wants to upload
+* Option to upload Stub code is also given to the user
+* Upload files and Download results facility is provided
+* Core Logic (Similarity between files) 
+  * Made some improvements on bag of words strategy for C++ files (Language Specific functionality)
+  * If a stub code file is provided by user then the influence of stub code has been removed from the files
+  
+# Implementation details (Needs to be updated)
 
 * We have used **Angular** for the frontend.
 * For the authentication part we used **Firebase** and were successful in
@@ -40,18 +43,28 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Home Page
 
+* **Options**
+  * Choose which type of file you want to upload (For now the options given are C++ and text, so select text if you want to select any language other than C++).
+  * Choose the approppriate option if you want to upload stub code.
 * **Upload**
-  * Upload a zip of all the files you want to check for plagiarism.
+  * If you have selected stub code option, only then you will be given an option to upload stub code file.
+  * Upload a **zip** of all the files you want to check for plagiarism. Please ensure that this zip file does not have any directory inside it.
+  * If the uploading of zip was successful then you can see the results of our plagiarism checker.
 * **Download**
   * Download the results of our plagiarism checker.
+  * Seperate options have been given to download the image or the CSV file. The CSV file contains a table of file names and Plagiarism percentage.
+* **Reset**
+  * After you have downloaded results, click on reset to upload new set of files.
 * Click on the **Logout** button once you are done.
 * Click on **Change Password** to change your password.
 
-# Yet to be done
+# Improvements that can be done
+* **Part-1**
+  * Improve our core logic by handling macros and some other ways of plagiarism in C++.
+  * Implement language specific functionality for other common languages like Python, Java etc.
+  * Use a better metric to find similarity between files using the signature vectors.
+  * Read about other strategies to detect plagiarism and try to improve our core logic.
 * **Part-2**
-  * Upgrade Authentication part implementing Django RESTapi, as we have observed that firebase is taking more time for the login part.
   * Add a new feature to create an organization and use organization code to login or signup.
-  * Make some minor changes in the upload and download part to make it more user-friendly.
-* **Part-3**
-  * Implement part-1 on the zip-file uploaded by the user, and provide download access to the final output of part-1. (Currently, the same zip file is returned for downloading)
-   * Implement a new app to authorize user login/signup requests from the frontend. (Google Firebase is our current choice)
+  * Add Forgot Password option in login page.
+  * Make some changes in styling to make it more attractive.
