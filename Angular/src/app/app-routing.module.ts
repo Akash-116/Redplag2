@@ -8,11 +8,12 @@ import { EmailGuard } from './shared/guard/email.guard'
 import { LogoutComponent } from './logout/logout.component';
 import { EmailverificationComponent } from './emailverification/emailverification.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { LoginGuard } from './shared/guard/login.guard';
 
 const routes: Routes = [
   {path:'',redirectTo:'login',pathMatch:"full"},
-  {path:'login',component:LoginComponentComponent,},
-  {path:'register',component:RegisterComponentComponent},
+  { path: 'login', component: LoginComponentComponent, canActivate:[LoginGuard]},
+  { path: 'register', component: RegisterComponentComponent, canActivate: [LoginGuard]},
   {path:'home',component:HomeComponent,canActivate:[AuthGuard]},
   {path:'logout',component:LogoutComponent,canActivate:[AuthGuard]},
   {path:'forgot',component:ForgotpasswordComponent},
