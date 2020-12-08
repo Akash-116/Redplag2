@@ -22,7 +22,7 @@
   * Restricting access for non-authenticated users.
   * Sending email verifications to activate account and also in case of change-password/ forgot-password requests.
   * Storing the JWtokens in the local storage of the browser. 
-  * **Minor Note**: we also have a parallel implementation using django-backend for user authorization, but it turned out to be devoid of features such as emailing users. So, finally Firebase was decided upon. ([Link](https://github.com/Akash-116/Redplag2) to the parallel django-backend-for-authorization implementation.) 
+  * **Minor Note**: we also have a parallel implementation using django-backend for user authorization, but it turned out to be devoid of features such as emailing users. So, finally Firebase was decided upon. ([Link](https://github.com/Akash-116/Redplag) to the parallel django-backend-for-authorization implementation.) 
   
 * For **Upload** and **Download** functionality, we've used **REST-API framework** from django as backend. Also:
   * When a zip-file is uploaded, it's constituents are stored in the **unzipped** folder. Instead, if a stub-code file is uploaded, it is placed in the **stubcode** directory.
